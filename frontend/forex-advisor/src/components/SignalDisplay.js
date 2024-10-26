@@ -24,7 +24,7 @@ const SignalDisplay = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/generate-explanation",
+        "https://signal-wave.onrender.com/generate-explanation",
         requestBody
       );
       setSignalData(response.data); // Save the API response (signal and explanation) to state
