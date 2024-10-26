@@ -1,0 +1,10 @@
+fastapi     
+langchain_openai         # Framework to work with LLMs and prompt engineering
+langchain_community      # Community module to work with LangChain
+langchain_core           # Web framework to build the backend API
+langserve                # FastAPI-based wrapper for serving LangChain APIs
+openai                   # OpenAI's API to access GPT models
+uvicorn                  # ASGI server to run the FastAPI app
+requests                 # To fetch forex data from Alpha Vantage API
+pandas                   # Data analysis library (used for RSI and moving average calculations)
+python-dotenv            # To manage environment variables (like API keys)

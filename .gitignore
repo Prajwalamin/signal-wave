@@ -1,0 +1,32 @@
+# Environments 
+trade/
+.env 
+
+
+
+# React 
+# Ignore node_modules folder in react-app
+frontent/forex-advisor/node_modules/
+
+# Ignore build folder (production build output)
+frontent/forex-advisor/build/
+
+# Ignore .env file with sensitive environment variables
+frontend/forex-advisor/.env
+
+# Ignore cache files
+frontend/forex-advisor/.cache
+frontend/forex-advisor/.parcel-cache
+
+# Ignore log files
+frontend/forex-advisor/npm-debug.log*
+frontend/forex-advisor/yarn-debug.log*
+frontend/forex-advisor/yarn-error.log*
+
+# Ignore lock files
+frontend/forex-advisor/package-lock.json
+frontend/forex-advisor/yarn.lock
+
+# Ignore IDE/editor-specific files
+frontend/forex-advisor/.vscode/
+frontend/forex-advisor/.idea/

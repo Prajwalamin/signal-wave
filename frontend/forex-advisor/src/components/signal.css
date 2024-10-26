@@ -1,0 +1,9 @@
+/* Add this CSS to your main CSS file */
+.explanation-scroll {
+  max-height: 150px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding: 8px;
+  border: 1px solid #e5e7eb; /* Optional border for clarity */
+  border-radius: 4px;
+  background-color: #f9fafb; /* Optional background */
+}
