@@ -39,7 +39,7 @@ The RSI is {rsi:.2f}, the price is {current_price}, the 50 day EMA is {ema_50} a
 Explain why this signal was generated. Also put emphasis on the crossing of the 50 and 200 day ema.
 """
 template = PromptTemplate(
-    input_variables=["signal", "rsi", "ema", "current_price"],
+    input_variables=["signal", "rsi", "ema_50", "ema_200", "current_price"],
     template=prompt_template
 )
 
@@ -51,6 +51,10 @@ llm = OpenAI(api_key=OPENAI_API_KEY, temperature=0.7, max_tokens=250)
 class SymbolRequest(BaseModel):
     symbol: str
 
+
+@app.get("/")  # Root route for testing
+async def root():
+    return {"message": "Langserve API is running"}
 
 @app.post("/generate-explanation")
 async def generate_explanation(request: SymbolRequest):
