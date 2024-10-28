@@ -64,7 +64,7 @@ const SignalDisplay = () => {
           type="text"
           value={symbol}
           onChange={(e) => setSymbol(e.target.value.toUpperCase())} // Ensure input is always uppercase
-          placeholder="EUR_USD"
+          placeholder="EURUSD"
           className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
           required
         />
